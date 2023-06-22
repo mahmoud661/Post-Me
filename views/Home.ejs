@@ -1,0 +1,13 @@
+ <%- include("partials/header.ejs")  -%>
+ 
+ <% posts.forEach(element => {%>
+      <div class="container contantD"> 
+       <h1 class="contantH"><%= element.title %></h1>
+        <p class="contant"><%= element.content %></p></div>
+      </div>
+ <%});%>
+       
+
+
+
+ <%- include("partials/footer.ejs")  -%>

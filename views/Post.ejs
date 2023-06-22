@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") -%>
+<div class="container contantD"> 
+<h1>Post</h1>
+<form method="post" action="/post">
+  <fieldset>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Title</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" name="title">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">The content of the post</label>
+      <textarea class="form-control" id="floatingTextarea2Disabled" style="height: 100px; resize: none" name="content"></textarea>
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary mbtn">Submit</button>
+    </div>
+  </fieldset>
+</form>
+</div>
+<%- include("partials/footer.ejs") -%>
